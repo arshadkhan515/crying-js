@@ -3,7 +3,6 @@ const util = require('util');
 const path = require('path');
 const fs = require('fs');
 const { execSync } = require('child_process');
-const ora = require('ora');
 
 
 // Utility functions
@@ -73,7 +72,7 @@ async function setup() {
 
         // Install dependencies
         const useYarn = await hasYarn();
-        const spinner = ora('Installing dependencies....').start();
+        console.log('Installing dependencies....')
         if (useYarn) {
             await runCmd('yarn install');
         } else {
@@ -83,8 +82,7 @@ async function setup() {
         console.log();
 
 
-        // console.log('Installation is now complete!');
-        spinner.succeed('Installation is now complete!');
+        console.log('Installation is now complete!');
         console.log();
 
         console.log('We suggest that you start by typing:');
@@ -124,7 +122,7 @@ setup();
 //     process.exit(-1);
 // }
 
-// const spinner = ora('Installing dependencies').start();
+// const spinner = console.log('Installing dependencies').start();
 
 // const installed = runCommand(install);
 
