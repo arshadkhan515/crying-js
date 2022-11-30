@@ -1,20 +1,22 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
+  "name": "crying-js",
+  "version": "1.0.1",
+  "description": "This is for crying developers who are tired of making backend in nodejs",
+  "bin": "./bin/cli.js",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "arshad khan",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.7.3"
+    "mongoose": "^6.7.3",
+    "ora": "^6.1.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
