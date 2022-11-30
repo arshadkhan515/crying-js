@@ -78,7 +78,6 @@ async function setup() {
         } else {
             await runCmd('npm install');
         }
-        spinner.succeed('Dependencies installed successfully.');
         console.log();
 
 
@@ -91,7 +90,6 @@ async function setup() {
         console.log();
         console.log('Enjoy your production-ready crying.js app, which already supports a large number of ready-made features!');
     } catch (error) {
-        spinner.fail('Something went wrong!');
         console.log(error);
     }
 }

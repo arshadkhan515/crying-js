@@ -1,5 +1,5 @@
 {
-  "name": "create-crying-js",
+  "name": "boy-crying-js",
   "version": "1.0.0",
   "description": "This is for crying developers who are tired of making backend in nodejs",
   "bin": "./bin/cli.js",
