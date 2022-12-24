@@ -1,5 +1,5 @@
 {
-  "name": "mom-crying-js",
+  "name": "crying-js",
   "version": "1.0.0",
   "description": "This is for crying developers who are tired of making backend in nodejs",
   "bin": "./bin/cli.js",
